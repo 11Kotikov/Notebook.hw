@@ -22,8 +22,8 @@ public class MemoMapper implements Mapper<Memo, String> {
                 memo.getId(), separator,
                 memo.getTopic(), separator,
                 memo.getContext(), separator,
-                memo.getCreationDateTime().format(DateTimeFormatter.ISO_LOCAL_DATE_TIME), separator,
-                memo.getComment());
+                memo.getComment(), separator,
+                memo.getCreationDateTime().format(DateTimeFormatter.ISO_LOCAL_DATE_TIME));
     }
 
     @Override
@@ -32,10 +32,9 @@ public class MemoMapper implements Mapper<Memo, String> {
         int id;
         if (isDigit(lines[0])) {
             id = Integer.parseInt(lines[0]);
-
-            LocalDateTime creationDateTime = LocalDateTime.parse(lines[3]);
-            String eventDateTime = lines[4];
-            return new Memo(id, lines[1], lines[2], creationDateTime, eventDateTime);
+            String comment = lines[3];
+            LocalDateTime creationDateTime = LocalDateTime.parse(lines[4]);
+            return new Memo(id, lines[1], lines[2], comment, creationDateTime);
         }
         throw new NumberFormatException("Id must be an integer");
     }

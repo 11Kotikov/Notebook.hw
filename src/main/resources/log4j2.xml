@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="warn" name="MyApp" packages="">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n" />
+        </Console>
+        <RollingFile name="RollingFile" fileName="logs/app.txt"
+                     filePattern="logs/$${date:yyyy-MM}/app-%d{MM-dd-yyyy}-%i.log.gz">
+            <PatternLayout>
+                <Pattern>%d %p %c{1.} [%t] %m%n</Pattern>
+            </PatternLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy />
+                <SizeBasedTriggeringPolicy size="250 MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="20"/>
+        </RollingFile>
+    </Appenders>
+    <Loggers>
+        <Logger name="com.example.notebook" level="debug" additivity="false">
+            <appender-ref ref="Console" level="debug" />
+            <appender-ref ref="RollingFile" level="debug" />
+        </Logger>
+        <Root level="error">
+            <appender-ref ref="Console" level="error" />
+            <appender-ref ref="RollingFile" level="error" />
+        </Root>
+    </Loggers>
+</Configuration>

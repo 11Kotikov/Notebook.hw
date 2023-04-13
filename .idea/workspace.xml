@@ -4,31 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f881ae2d-a1a2-49fc-bc77-ba6bf1eec325" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/notebook/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/notebook/controller/MemoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/notebook/mapper/Mapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/notebook/mapper/MemoMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/notebook/model/Memo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/notebook/repository/MemoRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/notebook/repository/Operations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/notebook/repository/repository/impl/FileOperation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/notebook/repository/repository/impl/RepositoryOperations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/notebook/service/MemoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/notebook/util/DbCreator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/notebook/view/MemoConsoleView.java" afterDir="false" />
+    <list default="true" id="f881ae2d-a1a2-49fc-bc77-ba6bf1eec325" name="Changes" comment="init">
+      <change afterPath="$PROJECT_DIR$/MyNoteBook.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/notebook/controller/MemoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/notebook/controller/MemoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/notebook/mapper/MemoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/notebook/mapper/MemoMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/notebook/model/Memo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/notebook/model/Memo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/notebook/view/MemoConsoleView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/notebook/view/MemoConsoleView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,13 +61,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="notebook.Main" />
@@ -113,7 +101,19 @@
       <option name="presentableId" value="Default" />
       <updated>1681243964939</updated>
     </task>
+    <task id="LOCAL-00001" summary="init">
+      <created>1681399516801</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1681399516801</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init" />
+    <option name="LAST_COMMIT_MESSAGE" value="init" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

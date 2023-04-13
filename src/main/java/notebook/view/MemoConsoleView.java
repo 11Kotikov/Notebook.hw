@@ -24,10 +24,10 @@ public class MemoConsoleView {
         String topic = scanner.nextLine();
         System.out.println("Enter memo context:");
         String context = scanner.nextLine();
-        LocalDateTime CurrentDateTime = LocalDateTime.now();
+        LocalDateTime currentDateTime = LocalDateTime.now();
         System.out.println("Enter event date and time or whatever:");
         String comment = scanner.nextLine();
-        return new Memo(0L, topic, context, CurrentDateTime, comment);
+        return new Memo(0L, topic, context, comment, currentDateTime);
     }
 
     public Long getNoteIdFromUserInput() {
@@ -43,8 +43,8 @@ public class MemoConsoleView {
         System.out.println("ID: " + memo.getId());
         System.out.println("Topic: " + memo.getTopic());
         System.out.println("Context: " + memo.getContext());
-        System.out.println("Creation Date and Time: " + memo.getCreationDateTime());
         System.out.println("Event Date and Time: " + memo.getComment());
+        System.out.println("Creation Date and Time: " + memo.getCreationDateTime());
     }
 
     public void displayAllMemos(List<Memo> memos) {

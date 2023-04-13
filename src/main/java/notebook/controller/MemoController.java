@@ -11,7 +11,11 @@ import static notebook.util.DbCreator.createDB;
 import java.util.List;
 import java.util.Scanner;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 public class MemoController {
+    private static final Logger logger = LogManager.getLogger(MemoController.class);
     MemoConsoleView view = new MemoConsoleView();
     FileOperation createdDb = new FileOperation(DB_PATH);
     MemoRepository memoRepository = new RepositoryOperations(createdDb);
@@ -19,6 +23,7 @@ public class MemoController {
     Scanner input = new Scanner(System.in);
 
     public void runApp() {
+        createDB();
         while (true) {
             view.showMainMenu();
             int choice = input.nextInt();
@@ -28,6 +33,7 @@ public class MemoController {
                 case 1 -> {
                     Memo memo = view.getNewMemoFromUserInput();
                     facade.saveMemo(memo);
+                    logger.info("New memo saved with ID {}", memo.getId());
                 }
                 case 2 -> {
                     Long id = view.getNoteIdFromUserInput();
@@ -36,6 +42,7 @@ public class MemoController {
                         view.displayMemo(readMemo);
                     } else {
                         view.showErrorMessage("Memo with ID " + id + " not found.");
+                        logger.warn("Memo with ID {} not found", id);
                     }
                 }
                 case 3 -> {
